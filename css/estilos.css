@@ -33,7 +33,7 @@ body {
   margin: 0;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -76,7 +76,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+flex-wrap: wrap;
 }
 
 .hero-image{
@@ -108,13 +108,14 @@ h2 {
   /* margin: 10px; */
   margin-bottom: 15px;
   /* margin-right
-  margin-left 
+  margin-left
   margin-top */
   padding: 20px;
   background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-course,
 .project-date,
@@ -153,6 +154,7 @@ h2 {
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 ol,
@@ -209,6 +211,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img {
@@ -226,7 +229,7 @@ figure {
 .event-list-title {
   margin-left: 20px;
 }
-.event { 
+.event {
   margin: 10px;
   width: 480px;
   flex-shrink: 0;
@@ -266,10 +269,10 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.social {
-}
+
 
 .social-link {
   display: inline-block;
@@ -315,17 +318,40 @@ figure {
   margin-top: 10px;
 }
 
-.form-email h3 { 
+.form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+/* Desktop First se empieza desde el MQ mas grande */
+/* Responsive desing como poner media query en hoja de estilos */
+
+@media screen and (max-width:1024 px){
+
+}
+
+
+ @media screen and (max-width: 768px){
+  /* body{
+    border:10px solid red;
+  } */
+}
+
+
+@media screen and (max-width:480 px){
+
+}
+
+@media screen and (max-width:320 px){
+
 }
